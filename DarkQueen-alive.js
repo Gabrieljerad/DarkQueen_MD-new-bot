@@ -6,22 +6,22 @@ const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', da
 //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
-            desc: "Show Live Time Of Pakistan",
-            category: "darkqueen",
+            desc: "Show Live Time Of Africa",
+            category: "Gabby",
 	          filename: __filename,
             use: '<group link.>',
         },
         async(Void, citel, text,{ isCreator }) => {
-var time = new Date().toLocaleString('HI', { timeZone: 'Asia/Karachi' }).split(' ')[1]
+var time = new Date().toLocaleString('HI', { timeZone: 'Africa/Nairobi' }).split(' ')[1]
 var date = new Date().toLocaleDateString(get_localized_date)
 var wish = ''
-if (hrs < 12) wish = 'ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ ⛅'
-if (hrs >= 12 && hrs <= 16) wish = 'ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌞'
-if (hrs >= 16 && hrs <= 20) wish = 'ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌥'
-if (hrs >= 20 && hrs <= 24) wish = 'ɢᴏᴏᴅ ɴɪɢʜᴛ 🌙'
+if (hrs < 12) wish = 'Gabby ⛅'
+if (hrs >= 12 && hrs <= 16) wish = 'Gabby🌞'
+if (hrs >= 16 && hrs <= 20) wish = 'Gabby'
+if (hrs >= 20 && hrs <= 24) wish = 'Gabby🌙'
 var am_pm = ''
 if (hrs < 12) am_pm = 'ᴀᴍ'
-if (hrs >= 12 && hrs <= 24) am_pm = 'ᴘᴍ'
+if (hrs >= 12 && hrs <= 24) am_pm = 'G'
 const suhail= [777,0,100,500,1000,999,2021]
 const q = {
   key: {
@@ -34,27 +34,27 @@ const q = {
            "itemCount" : suhail[Math.floor(8*Math.random())],
            "status": 1,
            "surface" : 1,
-           "message": `❏ ${Config.botname} ➬ Whatsapp Bot BY Mr.Notiya`,
+           "message": `❏ ${Config.botname} ➬ Whatsapp Bot BY Gabby`,
            "orderTitle": "alive",
-           "sellerJid": '94765837695@s.whatsapp.net' 
+           "sellerJid": '947658375@s.whatsapp.net' 
         }
       }
 }
 
 let timenow =`
 ┏╼═╾╼═╾╼═╾╼═╾╼═╾╼═╾❋
-┃↱ᴅᴀʀᴋ Qᴜᴇᴡɴ ᴍᴅ↲
-┃👋ʜᴇʟʟᴏᴡ ${citel.pushName},
+┃Gabby
+┃👋hello ${citel.pushName},
 ┣❑*${wish}* 
-┣❑ ɪᴀᴍ ᴅᴀʀᴋ Qᴜᴇᴇɴ
+┣❑i am Gabby
 ┣╼═╾╼═╾╼═╾╼═╾╼═╾●
 ┣❍ʙᴏᴛ ꜱᴘᴇᴇᴅ: ❲${latensie.toFixed(4)}❳
-┣❍ᴜᴘᴛɪᴍᴇ: ❲${runtime(process.uptime())}❳
-┣❍ᴏᴡɴᴇʀ: ❲ᴄʜᴀᴍᴏᴅʜ❳
-┣❍ᴛɪᴍᴇ: ❲${time} ${am_pm}❳
+┣Gabbys awake time: ❲${runtime(process.uptime())}❳
+┣❍Gabby: stat online
+┣❍muda or time: ❲${time} ${am_pm}❳
 ┃
-┃🎩 *_ᴅᴀʀᴋ Qᴜᴇᴇɴ ᴍᴅ_*🎩
-┃🎭 *_ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ ɴᴏᴛɪʏᴀ_*🎭
+┃😊*Gabby bot*😊
+┃🎭 *_dm Gabby to get a bot_*🎭
 ┗╼═╾╼═╾╼═╾╼═╾╼═╾╼═╾❋
 
 `
